@@ -1,7 +1,6 @@
 .game{
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-items: center;
     height: 90%;    
     padding-bottom: 20px;
@@ -15,7 +14,7 @@
         border-radius: 20px;
         padding: 15px;   
         height: 70%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     &__image{
@@ -42,9 +41,10 @@
 
     &__title{
         font-weight: 700;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 39px;
         margin-bottom: 10px;
+        text-transform: uppercase;
     }
 
     &__question{

@@ -1,0 +1,50 @@
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFC300;
+    border-radius: 20px;
+    padding: 20px;
+    
+
+    &__img{
+        width: 70%;
+        height: auto;
+    }
+
+    &__title{
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 20px;
+        letter-spacing: normal;
+        margin: 20px 0 10px;
+    }
+
+    &__text{
+        font-size: 18px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__buttons{
+        display: flex;
+        gap: 15px;
+    }
+
+    a{
+        text-decoration: none;
+        width: fit-content;
+        padding: 10px 20px;
+        color: #333;
+        font-weight: 700;
+        border-radius: 15px;
+    }
+}
+
+.btn_tryagain{
+    background-color: yellow;
+}
+
+.btn_menu{
+    border: 2px solid #333;
+}
