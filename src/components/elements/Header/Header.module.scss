@@ -1,0 +1,71 @@
+.header{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    align-items: center;
+    height: 10%;
+
+    &__logo{
+        width: 40px;
+        height: 40px;
+    }
+
+    &__title{
+        color: white;
+        font-family: "Inria Serif";
+    }
+}
+
+.burger {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    border-radius: 50%;
+}
+
+.burger__body{
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+.burger__body::before,
+.burger__body::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+.burger__body::before {
+    transform: translateY(-8px);
+}
+
+.burger__body::after {
+    transform: translateY(8px);
+}
+
+
+.burger.open .burger__body {
+    transform: translateX(-44px);
+    background: transparent;
+}
+
+.burger.open .burger__body::before {
+    transform: rotate(45deg) translate(32px, -32px);
+}
+
+.burger.open .burger__body::after {
+    transform: rotate(-45deg) translate(32px, 32px);
+}

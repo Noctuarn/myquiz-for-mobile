@@ -1,0 +1,72 @@
+.game{
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    align-items: center;
+    height: 90%;    
+    padding-bottom: 20px;
+
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFC300;
+        border-radius: 20px;
+        padding: 15px;   
+        height: 70%;
+        margin-bottom: 50px;
+    }
+
+    &__image{
+        width: 65%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    &__progress_bar{
+        width: 90%;
+        margin: 10px 0 15px;
+        border: 3px solid #333;
+        height: 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    &__progress_line{
+        width: 50%;
+        height: 100%;
+        background-color: #333;
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 39px;
+        margin-bottom: 10px;
+    }
+
+    &__question{
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+.answers{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    width: 100%;
+
+    &__item{
+        border: 2px solid #FFC300;
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+        padding: 20px 10px;
+        border-radius: 15px;
+        color: #FFC300;
+    }
+}

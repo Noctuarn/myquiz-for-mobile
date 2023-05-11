@@ -1,9 +1,14 @@
+import style from "./App.module.scss"
+import Header from "./components/elements/Header/Header"
+import Game from "./components/elements/Game/Game";
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+        <div className={style.wrapper}>
+          <Header/>
+          <Game/>
+        </div>
     </div>
   );
 }
