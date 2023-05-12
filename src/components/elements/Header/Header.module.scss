@@ -64,8 +64,10 @@
 
 .burger.open .burger__body::before {
     transform: rotate(45deg) translate(32px, -32px);
+    background-color: #FFC300;
 }
 
 .burger.open .burger__body::after {
+    background-color: #FFC300;
     transform: rotate(-45deg) translate(32px, 32px);
 }
